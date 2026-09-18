@@ -124,7 +124,7 @@
             font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
             font-size: 25px;
             color: #fafafc;
-            margin-top: -100px;
+            margin-top: 100px;
             margin-bottom: 50px;
          }
 
@@ -316,12 +316,12 @@
 }
   
 
-/* 2. Uniform Card Styling (Same Size) */
+
 .tier-box {
-  background-color: #efeff3;   /* Premium dark background */
+  background-color: #efeff3;   /* White background */
   color: #ffffff;              /* White text */
   padding: 30px;
-  border-radius: 20px;         /* Smooth rounded corners */
+  border-radius: 20px;         /* curved corners */
   font-size: 1.05rem;
   line-height: 1.5;
   color: #0a192f;              /* Navy text color */
@@ -343,27 +343,22 @@
   display: block;
 }
 
-#tier1::before { content: "🏢"; } /* Management icon */
-#tier2::before { content: "🛡️"; } /* Security icon */
-#tier3::before { content: "📶"; } /* Wi-Fi icon */
-#tier4::before { content: "🤝"; } /* Community icon */
+#tier1::before { content: "🏢"; } /* House emoji */
+#tier2::before { content: "🛡️"; } /* Shield emoji */
+#tier3::before { content: "📶"; } /* Network emoji */
+#tier4::before { content: "🤝"; } /* Holding hands emoji */
 
 
-/* 3. Asymmetric Bento Grid Placements (Desktop Only) */
-@media (min-width: 900px) {
-  .tiers {
-    grid-template-columns: 1fr; /* Enforces exact 3-column layout */
-  }
-
-  /* Makes Tier 3 stretch horizontally across 2 columns for that distinct layout variation */
+  
+  
   #tier-box {
     height:auto; /* Allows the box to expand based on content */
     grid-column: span 2;
     min-height: 220px; /* Ensures it doesn't shrink too much */ 
   }
-}
 
-/* 1. The Container that arranges the boxes horizontally */
+
+/*The Container that arranges the boxes horizontally */
 .rooms-container {
   display: flex;
   flex-direction: row;
@@ -375,21 +370,21 @@
   box-sizing: border-box;
 }
 
-/* 2. Styling the individual boxes */
+/* Styling the individual boxes */
 .room-card {
   background-color: #0a192f;   /* Deep Navy Blue box background */
   color: #ffffff;              /* Crisp white text color */
-  border: 1px solid rgba(212, 175, 55, 0.3); /* Subtle Gold border accent line */
-  border-radius: 16px;         /* Smooth modern corners */
+  border: 1px solid rgba(212, 175, 55, 0.3); 
+  border-radius: 16px;         /* curved corners */
   padding: 24px;
   flex: 1;                     /* Makes all 3 boxes exactly the same width */
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   box-sizing: border-box;
 }
 
-/* 3. Styling the titles inside the boxes */
+/* Styling the titles inside the boxes */
 .room-card h3 {
-  color: #ffffff;              /* Premium Gold text for room headers */
+  color: #ffffff;              /* Premium White text for room headers */
   margin-top: 0;
   margin-bottom: 16px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -397,14 +392,14 @@
   font-size: 1.3rem;
 }
 
-/* 4. Cleaning up the vertical text spacing inside the boxes */
+/* Cleaning up the vertical text spacing inside the boxes */
 .room-card p {
   margin: 8px 0;
   font-size: 1rem;
   line-height: 1.5;
 }
 
-/* 5. Mobile Phone Responsive Fix: Stacks them vertically on small screens */
+/* Mobile Phone Responsive Fix: Stacks them vertically on small screens */
 @media (max-width: 900px) {
   .rooms-container {
     flex-direction: column;
@@ -474,7 +469,7 @@
   box-sizing: border-box;
 }
 
-/* 1. Sets your brand Navy Blue background canvas on the Gallery page */
+/* Sets the main background for the Gallery page */
 .gallery-page {
   background-color: #0a192f !important;
   color: #ffffff;
@@ -483,12 +478,12 @@
 
 
 
-/* 3. The Core Flexbox Container (Unifies your 3 Column wrappers side-by-side) */
+
 #gallery {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 24px;                      /* Clean, even spacing gaps between the columns */
+  gap: 24px;                      /* even spaces between images */
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px 40px 20px;
@@ -497,37 +492,196 @@
 
 /* 4. Column Wrapper Settings */
 #gallery article {
-  flex: 1;                        /* Forces all columns to be mathematically identical widths */
+  flex: 1;                        
   display: flex;
   flex-direction: column;
-  gap: 32px;                      /* Balanced vertical gap between image blocks */
+  gap: 32px;                      
 }
 
-/* 5. The Square Engine Fix: Forces images into uniform square shapes */
+/* force image into square shapes */
 #gallery img {
   width: 100%;
-  aspect-ratio: 1 / 1;            /* 💡 Crucial: Forces the picture file to crop into a perfect square layout */
-  object-fit: cover;              /* Auto-zooms the asset inside without squishing pixels */
-  border-radius: 6px;             /* Clean, subtle corner curve aesthetics */
+  aspect-ratio: 1 / 1;           
+  object-fit: cover;              
+  border-radius: 6px;             
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
   display: block;
 }
 
-/* 6. Formatting the Caption text line elements directly below the images */
+/* aligns the image captions under the images */
 #gallery figcaption {
-  margin-top: 10px;               /* Clean margin cushion spacing beneath the square */
-  margin-bottom: 8px;             /* Space before the next picture starts */
+  margin-top: 10px;               
+  margin-bottom: 8px;            
   font-size: 1.1rem;
   font-weight: 500;
-  text-align: center;             /* Horizontally aligns text perfectly center */
-  color: #ffffff;                 /* Crisp white caption styling */
+  text-align: center;            
+  color: #ffffff;                 
 }
 
-/* 7. Mobile Responsive Stacking View Engine */
-@media (max-width: 768px) {
+
+@media screen and (max-width: 768px) {
+
+  /* --- GLOBAL LAYOUT RESET & SAFETY SHIELD --- */
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    overflow-x: hidden; /* Hard safety gate protecting screens from ugly horizontal side-scrolling */
+    width: 100%;
+  }
+
+  /* --- RESPONSIVE NAVIGATION BAR HEADER --- */
+  header {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 15px;
+    padding: 15px !important;
+  }
+
+  header nav {
+    width: 100%;
+  }
+
+  /* put navigation links in a row */
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px 20px;
+    width: 100%;
+  }
+
+  .nav-links a {
+    font-size: 1rem !important;
+    padding: 6px 0;
+  }
+
+
+
+
+  /* takes the hero section */
+  .hero-section {
+    min-height: auto !important;
+    padding: 40px 16px !important;
+  }
+
+  /* Deletes negative padding or margin track conflicts */
+  #welcome-text {
+    font-size: 2.2rem !important;
+    line-height: 1.2 !important;
+    margin-top: 0 !important;
+    margin-bottom: 20px !important;
+    text-align: center !important;
+  }
+
+  /* Resets properties, eliminating the overlapping -55px gap */
+  h4, .hero-section h2, .hero-section h4 {
+    font-size: 1.1rem !important;
+    line-height: 1.5 !important;
+    margin-top: 0 !important;
+    margin-bottom: 16px !important;
+    text-align: center !important;
+  }
+
+  /* Stabilizes the secondary home headings */
+  .home-page h2 {
+    font-size: 1.6rem !important;
+    text-align: center !important;
+    margin-top: 30px !important;
+    margin-bottom: 20px !important;
+  }
+
+  /* Centers the bullet point lists cleanly on compact displays */
+  #cater-for-list {
+    margin-top: 0 !important;
+    margin-bottom: 30px !important;
+    font-size: 1.1rem !important;
+    padding-left: 20px !important;
+    display: inline-block !important;
+    max-width: 290px;
+  }
+
+
+ 
+
+  /* Fixes top page headers */
+  .about-page h2, 
+  body.about-page > h2 {
+    font-size: 1.8rem !important;
+    margin-top: 30px !important;
+    margin-bottom: 20px !important;
+    text-align: center !important;
+  }
+
+  /* Overrides the massive 25px font and strips the destructive -100px margin from line 100 */
+  .about-page p {
+    font-size: 1.15rem !important; 
+    line-height: 1.6 !important;
+    margin-top: 0 !important;      
+    margin-bottom: 24px !important;
+    padding: 0 16px !important;
+  }
+
+
+ 
+  
+  .rooms-container {
+    display: flex;
+    flex-direction: column !important; /* Converts desktop row into an vertical card scroll  */
+    gap: 24px !important;
+    padding: 0 16px !important;
+  }
+
+  .room-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+
+
+ 
+  
+  .contact-page main {
+    width: 92% !important;
+    max-width: 100% !important;
+    margin: 20px auto !important;
+    padding: 24px 16px !important;
+  }
+
+  /* Expands form interaction touch points for user fingertips */
+  .contact-page main input,
+  .contact-page main select {
+    font-size: 16px !important; 
+    padding: 12px !important;
+  }
+
+
+
+
+  /*Makes a clean view for the gallery*/
   #gallery {
-    flex-direction: column;       /* Clean vertical scrolling columns on mobile */
-    gap: 32px;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 24px !important;
+    padding: 0 16px !important;
+  }
+
+  #gallery article {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 24px !important;
+  }
+
+  /* changes the gallery image styling */
+  #gallery img {
+    width: 100% !important;
+    aspect-ratio: 1 / 1 !important;
+    object-fit: cover !important;
+    border-radius: 8px !important;
   }
 }
 
