@@ -1,5 +1,5 @@
 .hero-section {
-            background-image: linear-gradient(to bottom, transparent 10%, #4e4e50 90%), url('../images/image2.jpg');
+            background-image: linear-gradient(to bottom, transparent 20%, #4e4e50 80%), url('../images/image2.jpg');
             background-size: cover;
             background-position: center;
             padding: left 20px;
@@ -9,11 +9,13 @@
             color: rgb(241, 233, 233);
         }
 
+
+
       h2{
         text-align: left;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, sans-serif;
         font-size: 36px;
-        color: #1A1D20;
+        color: #ffffff;
         margin-top: 20px;
         margin-bottom: 100px;
     }
@@ -22,7 +24,7 @@
         text-align: left;
         font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
         font-size: -20px;
-        color: #000080;
+        color: #0a192f;
         margin-top: -55px;
         margin-bottom: 55px;
     }
@@ -32,7 +34,7 @@
         font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
         font-style: bold;
         font-size: -20px;
-        color: #000080;
+        color: #0a192f;
         margin-top: -55px;
         margin-bottom: 55px; 
     }
@@ -40,12 +42,12 @@
    
 
      #welcome-text {
-        margin-top: -30px;
+        margin-top: -0px;
         margin-bottom: 60px;
          text-align: left;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, sans-serif;
         font-size: 36px;
-        color: #000080
+        color: #0a192f
        
     }
     
@@ -53,13 +55,139 @@
         text-align: center;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, sans-serif;
         font-size: 36px;
-        color: #1A1D20 ;
+        color: #f2f4f7 ;
         font-style: bold;
         margin-top: 0px;
          }
-    
+
+         .home-page h2 {
+            text-align: left;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, sans-serif;
+            font-size: 36px;
+            color: #0a192f;
+            margin-top: 20px;
+            margin-bottom: 100px;
+          }
+
+          .home-page #address {
+              text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+            font-size: 20px;
+            color: #f5f8f5;
+            margin-top: 20px;
+            margin-bottom: 20px;
+         }
+
+         .home-page #copyright {
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+            font-size: 20px;
+            color: #ffffff;
+            margin-top: 20px;
+            margin-bottom: 20px;
+         }
+         .about-page {
+          background-color: #0a192f;
+  color: #ffffff;
+  font-family: system-ui, -apple-system, sans-serif;
+         }
+
+    .about-page p {
+            text-align: left;
+            font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+            font-size: 25px;
+            color: #ffffff;
+            margin-top: -100px;
+            margin-bottom: 50px;
+         }
+         
+         .about-page #address {
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+            font-size: 20px;
+            color: #f5f8f5;
+            margin-top: 20px;
+            margin-bottom: 20px;
+         }
+
+         .about-page #copyright {
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+            font-size: 20px;
+            color: #ffffff;
+            margin-top: 20px;
+            margin-bottom: 20px;
+         }  
+
+         .about-page ul {
+            text-align: left;
+            font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+            font-size: 25px;
+            color: #fafafc;
+            margin-top: -100px;
+            margin-bottom: 50px;
+         }
+
+         .backrooms-page #address {
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+            font-size: 20px;
+            color: #f5f8f5;
+            margin-top: 20px;
+            margin-bottom: 20px;
+         }
+
+         .backrooms-page #copyright {
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+            font-size: 20px;
+            color: #ffffff;
+            margin-top: 20px;
+            margin-bottom: 20px;
+         }
+
+         .contact-page #address {
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+            font-size: 20px;
+            color: #f5f8f5;
+            margin-top: 20px;
+            margin-bottom: 20px;
+         }
+
+         .contact-page #copyright {
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+            font-size: 20px;
+            color: #ffffff;
+            margin-top: 20px;
+            margin-bottom: 20px;
+         }
+
+         .gallery-page #address {
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+            font-size: 20px;
+            color: #f5f8f5;
+            margin-top: 20px;
+            margin-bottom: 20px;
+         }  
+
+         .gallery-page #copyright {
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+            font-size: 20px;
+            color: #ffffff;
+            margin-top: 20px;
+            margin-bottom: 20px;
+         }
+
+         .href{
+            text-decoration: none;
+            color: #ff0202;
+         }
         body {
-            font-family: Arial, sans-serif;
+            font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
             margin: 0px;
             padding: 0;
             width: 100%;
@@ -73,7 +201,7 @@
 
 
          header {
-            background-color: #000080;
+            background-color: #7b828b;
             color: rgb(255, 255, 255);
             display: flex;
             justify-content: space-between;
@@ -88,7 +216,7 @@
             color: rgb(255, 253, 253);
             text-decoration: none;
             margin-left: 10px;
-            font-family: Arial, sans-serif;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, sans-serif;
             font-weight: bold;
         }
 
@@ -106,7 +234,7 @@
          .promo-banner {
       max-width: 1200px;
       margin: 100px auto 0px;
-      background-color:#f8fafa;
+      background-color:#0a192f;
       border: 1px dashed var(--border-card);
       border-radius: 50px;
       padding: 24px;
@@ -127,16 +255,10 @@
       justify-content: space-around;
       flex-wrap: wrap;
       gap: 16px;
-      color: #142d9c;
+      color: #fdfdfd;
     }
 
-         .tier-box {
-      background: rgb(24, 161, 11);
-      border: 1px solid var(--border-card);
-      padding: 12px 24px;
-      border-radius: 20px;
-      min-width: 180px;
-    }
+       
 
 
         nav a {
@@ -154,8 +276,14 @@
             margin-bottom: 15px;
           }  
 
+          #gallery {
+          
+    background-image: none;
+    padding-left: 25px;
+}
+
         footer {
-            background-color: #000080;
+            background-color: #7b828b;
             color: rgb(255, 255, 255);
             text-align: center;
              width: 100%;
@@ -185,16 +313,18 @@
   font-family: system-ui, -apple-system, sans-serif;
   width: 100%;
   box-sizing: border-box;
+}
   
 
 /* 2. Uniform Card Styling (Same Size) */
 .tier-box {
-  background-color: #000080;   /* Premium dark background */
+  background-color: #efeff3;   /* Premium dark background */
   color: #ffffff;              /* White text */
   padding: 30px;
   border-radius: 20px;         /* Smooth rounded corners */
   font-size: 1.05rem;
   line-height: 1.5;
+  color: #0a192f;              /* Navy text color */
   
   /* Forces all cards to match the height of the tallest card's text */
   display: flex;
@@ -230,6 +360,174 @@
     height:auto; /* Allows the box to expand based on content */
     grid-column: span 2;
     min-height: 220px; /* Ensures it doesn't shrink too much */ 
+  }
+}
+
+/* 1. The Container that arranges the boxes horizontally */
+.rooms-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 24px;
+  max-width: 1200px;
+  margin: 30px auto;
+  width: 70%;
+  box-sizing: border-box;
+}
+
+/* 2. Styling the individual boxes */
+.room-card {
+  background-color: #0a192f;   /* Deep Navy Blue box background */
+  color: #ffffff;              /* Crisp white text color */
+  border: 1px solid rgba(212, 175, 55, 0.3); /* Subtle Gold border accent line */
+  border-radius: 16px;         /* Smooth modern corners */
+  padding: 24px;
+  flex: 1;                     /* Makes all 3 boxes exactly the same width */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+}
+
+/* 3. Styling the titles inside the boxes */
+.room-card h3 {
+  color: #ffffff;              /* Premium Gold text for room headers */
+  margin-top: 0;
+  margin-bottom: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 8px;
+  font-size: 1.3rem;
+}
+
+/* 4. Cleaning up the vertical text spacing inside the boxes */
+.room-card p {
+  margin: 8px 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* 5. Mobile Phone Responsive Fix: Stacks them vertically on small screens */
+@media (max-width: 900px) {
+  .rooms-container {
+    flex-direction: column;
+  }
+}
+
+
+/* Only triggers the side-by-side room boxes on the Backrooms page */
+.backrooms-page .rooms-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 24px;
+  max-width: 1200px;
+  margin: 30px auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.backrooms-page {
+ background-color: #0a192f !important;
+  color: #ffffff;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.backrooms-page .room-card {
+  background-color: #0a192f;   
+  color: #ffffff;              
+  border: 1px solid rgba(212, 175, 55, 0.3); 
+  border-radius: 16px;         
+  padding: 24px;
+  flex: 1;                     
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+}
+.contact-page {
+ background-color: #0a192f !important;
+  color: #ffffff;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* Only transforms the <main> container into a Navy block card on the Contact page */
+.contact-page main {
+  background-color: #0a192f;           
+  color: #ffffff;                      
+  max-width: 600px;                    
+  margin: 40px auto;                   
+  padding: 40px;
+  border-radius: 20px;                 
+  border: 1px solid rgba(212, 175, 55, 0.2); 
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  height: -1;
+}
+
+.contact-page main input[type="text"],
+.contact-page main input[type="email"],
+.contact-page main input[type="tel"],
+.contact-page main select {
+  width: 100%;                         
+  padding: 12px;
+  background-color: #ffffff;           
+  color: #1a1d20;                      
+  border: 2px solid #cbd5e1;
+  border-radius: 8px;                  
+  margin-bottom: 20px;                 
+  box-sizing: border-box;
+}
+
+/* 1. Sets your brand Navy Blue background canvas on the Gallery page */
+.gallery-page {
+  background-color: #0a192f !important;
+  color: #ffffff;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+
+
+/* 3. The Core Flexbox Container (Unifies your 3 Column wrappers side-by-side) */
+#gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 24px;                      /* Clean, even spacing gaps between the columns */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px 40px 20px;
+  box-sizing: border-box;
+}
+
+/* 4. Column Wrapper Settings */
+#gallery article {
+  flex: 1;                        /* Forces all columns to be mathematically identical widths */
+  display: flex;
+  flex-direction: column;
+  gap: 32px;                      /* Balanced vertical gap between image blocks */
+}
+
+/* 5. The Square Engine Fix: Forces images into uniform square shapes */
+#gallery img {
+  width: 100%;
+  aspect-ratio: 1 / 1;            /* 💡 Crucial: Forces the picture file to crop into a perfect square layout */
+  object-fit: cover;              /* Auto-zooms the asset inside without squishing pixels */
+  border-radius: 6px;             /* Clean, subtle corner curve aesthetics */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+  display: block;
+}
+
+/* 6. Formatting the Caption text line elements directly below the images */
+#gallery figcaption {
+  margin-top: 10px;               /* Clean margin cushion spacing beneath the square */
+  margin-bottom: 8px;             /* Space before the next picture starts */
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-align: center;             /* Horizontally aligns text perfectly center */
+  color: #ffffff;                 /* Crisp white caption styling */
+}
+
+/* 7. Mobile Responsive Stacking View Engine */
+@media (max-width: 768px) {
+  #gallery {
+    flex-direction: column;       /* Clean vertical scrolling columns on mobile */
+    gap: 32px;
   }
 }
 
