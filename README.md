@@ -106,3 +106,13 @@ All notable changes to this project are documented below. This file tracks the e
 - Uploaded primary project assessment document `10530421_Kelebogile_Dubazana_PoE_P1.docx` for tracking purposes.
 
 
+
+## References
+Amazon.co.za, 2022. Nesting Coffee Table Set of 2, Modern Black Glass Side Table, Metal Frame Square End Table, Center Tables,Nesting Coffee Table for Living Room,Bedroom And Small es [online image] 
+Available at: https://m.media-amazon.com/images/I/71ApcBCYgcL._AC_SY300_SX300_QL70_ML2_.jpg. [Accessed 18 September 2026].
+
+
+Amazon.co.za, n.d. GloTika 3 Tier Over The Toilet Storage Rack with 2 Basket, Metal Freestanding Bathroom Shelves Toilet with Paper Holder and 4 Hooks, Over Toilet Storage Shelf for Bathroom Storage, Black [online image] 
+Available at: (https://m.media-amazon.com/images/I/71+BTrYYRcL._AC_SX569_.jpg) [Accessed 18 September 2026].
+
+
