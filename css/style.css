@@ -1,0 +1,235 @@
+.hero-section {
+            background-image: linear-gradient(to bottom, transparent 10%, #4e4e50 90%), url('../images/image2.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: left 20px;
+            padding: right 20px;
+            min-height: 10vh;
+            text-align: center;
+            color: rgb(241, 233, 233);
+        }
+
+      h2{
+        text-align: left;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, sans-serif;
+        font-size: 36px;
+        color: #1A1D20;
+        margin-top: 20px;
+        margin-bottom: 100px;
+    }
+
+ h4{
+        text-align: left;
+        font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+        font-size: -20px;
+        color: #000080;
+        margin-top: -55px;
+        margin-bottom: 55px;
+    }
+
+    #cater-for-list {
+       text-align: left;
+        font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+        font-style: bold;
+        font-size: -20px;
+        color: #000080;
+        margin-top: -55px;
+        margin-bottom: 55px; 
+    }
+
+   
+
+     #welcome-text {
+        margin-top: -30px;
+        margin-bottom: 60px;
+         text-align: left;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, sans-serif;
+        font-size: 36px;
+        color: #000080
+       
+    }
+    
+    #h1{ 
+        text-align: center;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, sans-serif;
+        font-size: 36px;
+        color: #1A1D20 ;
+        font-style: bold;
+        margin-top: 0px;
+         }
+    
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0px;
+            padding: 0;
+            width: 100%;
+        }
+        
+
+    header, footer {
+    width: 100%;
+    box-sizing: border-box; 
+        }
+
+
+         header {
+            background-color: #000080;
+            color: rgb(255, 255, 255);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            padding: 15px 40px;
+        }
+
+        
+
+         header nav a {
+            color: rgb(255, 253, 253);
+            text-decoration: none;
+            margin-left: 10px;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        nav img {
+            width: 50px;
+            height: 50px;
+        }
+
+         .promo-banner {
+      max-width: 1200px;
+      margin: 100px auto 0px;
+      background-color:#f8fafa;
+      border: 1px dashed var(--border-card);
+      border-radius: 50px;
+      padding: 24px;
+      text-align: center;
+
+    }
+
+    .promo-banner h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1.4rem;
+      color: var(--acid-green);
+      margin-bottom: 12px;
+      text-align: center;
+    }
+
+    .tiers {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 16px;
+      color: #142d9c;
+    }
+
+         .tier-box {
+      background: rgb(24, 161, 11);
+      border: 1px solid var(--border-card);
+      padding: 12px 24px;
+      border-radius: 20px;
+      min-width: 180px;
+    }
+
+
+        nav a {
+            color: rgb(10, 10, 10);
+            text-decoration: italic;
+            padding: 10px;
+        }
+
+        main {
+            padding: 50px;
+        }
+          h1 {
+            border-bottom: 2px solid black;
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+          }  
+
+        footer {
+            background-color: #000080;
+            color: rgb(255, 255, 255);
+            text-align: center;
+             width: 100%;
+            padding: 20px 0;
+            margin: 0;
+           
+        }
+         footer nav a {
+            color: rgb(8, 8, 8);
+            text-decoration: none;
+            margin-left: 10px;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+        }
+
+
+       /* 1. The Grid Container Wrapper */
+.tiers {
+  display: flex;
+  flex-direction: row;
+  /* Automatically wraps columns to fit screens, keeping them uniform */
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 100%;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: system-ui, -apple-system, sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+  
+
+/* 2. Uniform Card Styling (Same Size) */
+.tier-box {
+  background-color: #000080;   /* Premium dark background */
+  color: #ffffff;              /* White text */
+  padding: 30px;
+  border-radius: 20px;         /* Smooth rounded corners */
+  font-size: 1.05rem;
+  line-height: 1.5;
+  
+  /* Forces all cards to match the height of the tallest card's text */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 200px; 
+  text-align: center;
+  box-sizing: border-box;
+  flex: 1;
+}
+
+/* 3. Injecting Icons via CSS (Matches your IDs) */
+.tier-box::before {
+  font-size: 2rem;            /* Icon size */
+  margin-bottom: 15px;        /* Spacing below icon */
+  display: block;
+}
+
+#tier1::before { content: "🏢"; } /* Management icon */
+#tier2::before { content: "🛡️"; } /* Security icon */
+#tier3::before { content: "📶"; } /* Wi-Fi icon */
+#tier4::before { content: "🤝"; } /* Community icon */
+
+
+/* 3. Asymmetric Bento Grid Placements (Desktop Only) */
+@media (min-width: 900px) {
+  .tiers {
+    grid-template-columns: 1fr; /* Enforces exact 3-column layout */
+  }
+
+  /* Makes Tier 3 stretch horizontally across 2 columns for that distinct layout variation */
+  #tier-box {
+    height:auto; /* Allows the box to expand based on content */
+    grid-column: span 2;
+    min-height: 220px; /* Ensures it doesn't shrink too much */ 
+  }
+}
+
