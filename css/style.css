@@ -209,6 +209,11 @@
             text-decoration: none;
             color: #ff0202;
          }
+
+          #cta-links {
+            text-decoration: none;
+            color: #ff0202;
+         }
         body {
             font-family: 'Calibri', 'Arial', sans-serif;
             margin: 0px;
