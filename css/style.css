@@ -13,7 +13,7 @@
 
       h2{
         text-align: left;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, sans-serif;
+        font-family: 'Montserrat', 'Century Gothic', sans-serif;
         font-size: 36px;
         color: #ffffff;
         margin-top: 20px;
@@ -22,21 +22,22 @@
 
  h4{
         text-align: left;
-        font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
-        font-size: -20px;
+        font-family:'Calibri', 'Arial', sans-serif;
+        font-style: normal;
+        font-size: 23px;
         color: #0a192f;
-        margin-top: -55px;
-        margin-bottom: 55px;
+        margin-top: -80px;
+        margin-bottom: 100px;
     }
 
     #cater-for-list {
        text-align: left;
-        font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
-        font-style: bold;
-        font-size: -20px;
+        font-family:'Calibri', 'Arial', sans-serif;
+        font-style: normal;
+        font-size: 23px;
         color: #0a192f;
-        margin-top: -55px;
-        margin-bottom: 55px; 
+        margin-top: -80px;
+        margin-bottom: 100px; 
     }
 
    
@@ -45,15 +46,25 @@
         margin-top: -0px;
         margin-bottom: 60px;
          text-align: left;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, sans-serif;
+        font-family: 'Montserrat', 'Century Gothic', sans-serif;
         font-size: 36px;
         color: #0a192f
+       
+    }
+
+     #about-heading {
+        margin-top: 20px;
+        margin-bottom: 50px;
+         text-align: left;
+        font-family: 'Montserrat', 'Century Gothic', sans-serif;
+        font-size: 36px;
+        color: #eff2f7
        
     }
     
     #h1{ 
         text-align: center;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, sans-serif;
+        font-family: 'Montserrat', 'Century Gothic', sans-serif;
         font-size: 36px;
         color: #f2f4f7 ;
         font-style: bold;
@@ -62,7 +73,7 @@
 
          .home-page h2 {
             text-align: left;
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, sans-serif;
+            font-family: 'Montserrat', 'Century Gothic', sans-serif;
             font-size: 36px;
             color: #0a192f;
             margin-top: 20px;
@@ -71,7 +82,7 @@
 
           .home-page #address {
               text-align: center;
-            font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+            font-family: 'Calibri', 'Arial', sans-serif;
             font-size: 20px;
             color: #f5f8f5;
             margin-top: 20px;
@@ -80,7 +91,7 @@
 
          .home-page #copyright {
             text-align: center;
-            font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+            font-family: 'Calibri', 'Arial', sans-serif;
             font-size: 20px;
             color: #ffffff;
             margin-top: 20px;
@@ -94,16 +105,27 @@
 
     .about-page p {
             text-align: left;
-            font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+            font-family:'Calibri', 'Arial', sans-serif;
             font-size: 25px;
-            color: #ffffff;
-            margin-top: -100px;
+            color:#e2e8f0;
+            margin-top: -80px;
+            margin-bottom: 100px;
+         }
+
+
+               p {
+            text-align: left;
+            font-family: 'Calibri', 'Arial', sans-serif;
+            font-size: 25px;
+            color:#e2e8f0;
+            margin-top: 10px;
             margin-bottom: 50px;
          }
+
          
          .about-page #address {
             text-align: center;
-            font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+            font-family: 'Calibri', 'Arial', sans-serif;
             font-size: 20px;
             color: #f5f8f5;
             margin-top: 20px;
@@ -112,7 +134,7 @@
 
          .about-page #copyright {
             text-align: center;
-            font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+            font-family: 'Calibri', 'Arial', sans-serif;
             font-size: 20px;
             color: #ffffff;
             margin-top: 20px;
@@ -120,17 +142,18 @@
          }  
 
          .about-page ul {
-            text-align: left;
-            font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+           text-align: left;
+            font-family:'Calibri', 'Arial', sans-serif;
             font-size: 25px;
-            color: #fafafc;
-            margin-top: 100px;
-            margin-bottom: 50px;
+            color:#e2e8f0;
+            margin-top: -80px;
+            margin-bottom: 100px;
          }
+         
 
          .backrooms-page #address {
             text-align: center;
-            font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+            font-family: 'Calibri', 'Arial', sans-serif;
             font-size: 20px;
             color: #f5f8f5;
             margin-top: 20px;
@@ -139,7 +162,7 @@
 
          .backrooms-page #copyright {
             text-align: center;
-            font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+            font-family: 'Calibri', 'Arial', sans-serif;
             font-size: 20px;
             color: #ffffff;
             margin-top: 20px;
@@ -148,7 +171,7 @@
 
          .contact-page #address {
             text-align: center;
-            font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+            font-family: 'Calibri', 'Arial', sans-serif;
             font-size: 20px;
             color: #f5f8f5;
             margin-top: 20px;
@@ -157,7 +180,7 @@
 
          .contact-page #copyright {
             text-align: center;
-            font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+            font-family: 'Calibri', 'Arial', sans-serif;
             font-size: 20px;
             color: #ffffff;
             margin-top: 20px;
@@ -166,7 +189,7 @@
 
          .gallery-page #address {
             text-align: center;
-            font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+            font-family: 'Calibri', 'Arial', sans-serif;
             font-size: 20px;
             color: #f5f8f5;
             margin-top: 20px;
@@ -175,19 +198,19 @@
 
          .gallery-page #copyright {
             text-align: center;
-            font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+            font-family: 'Calibri', 'Arial', sans-serif;
             font-size: 20px;
             color: #ffffff;
             margin-top: 20px;
             margin-bottom: 20px;
          }
 
-         .href{
+         #cta-links {
             text-decoration: none;
             color: #ff0202;
          }
         body {
-            font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+            font-family: 'Calibri', 'Arial', sans-serif;
             margin: 0px;
             padding: 0;
             width: 100%;
@@ -216,7 +239,7 @@
             color: rgb(255, 253, 253);
             text-decoration: none;
             margin-left: 10px;
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, sans-serif;
+            font-family: 'Calibri', 'Arial', sans-serif;
             font-weight: bold;
         }
 
@@ -618,6 +641,14 @@
 
   /* Overrides the massive 25px font and strips the destructive -100px margin from line 100 */
   .about-page p {
+    font-size: 1.15rem !important; 
+    line-height: 1.6 !important;
+    margin-top: 0 !important;      
+    margin-bottom: 24px !important;
+    padding: 0 16px !important;
+  }
+
+  .about-page ul {
     font-size: 1.15rem !important; 
     line-height: 1.6 !important;
     margin-top: 0 !important;      
