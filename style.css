@@ -1,0 +1,766 @@
+.hero-section {
+            background-image: linear-gradient(to bottom, transparent 20%, #4e4e50 80%), url('../images/image2.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: left 20px;
+            padding: right 20px;
+            min-height: 10vh;
+            text-align: center;
+            color: rgb(241, 233, 233);
+        }
+
+
+
+      h2{
+        text-align: left;
+        font-family: 'Montserrat', 'Century Gothic', sans-serif;
+        font-size: 36px;
+        color: #ffffff;
+        margin-top: 20px;
+        margin-bottom: 100px;
+    }
+
+ h4{
+        text-align: left;
+        font-family:'Calibri', 'Arial', sans-serif;
+        font-style: normal;
+        font-size: 23px;
+        color: #0a192f;
+        margin-top: -80px;
+        margin-bottom: 100px;
+    }
+
+    #cater-for-list {
+       text-align: left;
+        font-family:'Calibri', 'Arial', sans-serif;
+        font-style: normal;
+        font-size: 23px;
+        color: #0a192f;
+        margin-top: -80px;
+        margin-bottom: 100px; 
+    }
+
+   
+
+     #welcome-text {
+        margin-top: -0px;
+        margin-bottom: 60px;
+         text-align: left;
+        font-family: 'Montserrat', 'Century Gothic', sans-serif;
+        font-size: 36px;
+        color: #0a192f
+       
+    }
+
+     #about-heading {
+        margin-top: 20px;
+        margin-bottom: 50px;
+         text-align: left;
+        font-family: 'Montserrat', 'Century Gothic', sans-serif;
+        font-size: 36px;
+        color: #eff2f7
+       
+    }
+    
+    #h1{ 
+        text-align: center;
+        font-family: 'Montserrat', 'Century Gothic', sans-serif;
+        font-size: 36px;
+        color: #f2f4f7 ;
+        font-style: bold;
+        margin-top: 0px;
+         }
+
+         .home-page h2 {
+            text-align: left;
+            font-family: 'Montserrat', 'Century Gothic', sans-serif;
+            font-size: 36px;
+            color: #0a192f;
+            margin-top: 20px;
+            margin-bottom: 100px;
+          }
+
+          .home-page #address {
+              text-align: center;
+            font-family: 'Calibri', 'Arial', sans-serif;
+            font-size: 20px;
+            color: #f5f8f5;
+            margin-top: 20px;
+            margin-bottom: 20px;
+         }
+
+         .home-page #copyright {
+            text-align: center;
+            font-family: 'Calibri', 'Arial', sans-serif;
+            font-size: 20px;
+            color: #ffffff;
+            margin-top: 20px;
+            margin-bottom: 20px;
+         }
+         .about-page {
+          background-color: #0a192f;
+  color: #ffffff;
+  font-family: system-ui, -apple-system, sans-serif;
+         }
+
+    .about-page p {
+            text-align: left;
+            font-family:'Calibri', 'Arial', sans-serif;
+            font-size: 25px;
+            color:#e2e8f0;
+            margin-top: -80px;
+            margin-bottom: 100px;
+         }
+
+
+               p {
+            text-align: left;
+            font-family: 'Calibri', 'Arial', sans-serif;
+            font-size: 25px;
+            color:#e2e8f0;
+            margin-top: 10px;
+            margin-bottom: 50px;
+         }
+
+         
+         .about-page #address {
+            text-align: center;
+            font-family: 'Calibri', 'Arial', sans-serif;
+            font-size: 20px;
+            color: #f5f8f5;
+            margin-top: 20px;
+            margin-bottom: 20px;
+         }
+
+         .about-page #copyright {
+            text-align: center;
+            font-family: 'Calibri', 'Arial', sans-serif;
+            font-size: 20px;
+            color: #ffffff;
+            margin-top: 20px;
+            margin-bottom: 20px;
+         }  
+
+         .about-page ul {
+           text-align: left;
+            font-family:'Calibri', 'Arial', sans-serif;
+            font-size: 25px;
+            color:#e2e8f0;
+            margin-top: -80px;
+            margin-bottom: 100px;
+         }
+         
+
+         .backrooms-page #address {
+            text-align: center;
+            font-family: 'Calibri', 'Arial', sans-serif;
+            font-size: 20px;
+            color: #f5f8f5;
+            margin-top: 20px;
+            margin-bottom: 20px;
+         }
+
+         .backrooms-page #copyright {
+            text-align: center;
+            font-family: 'Calibri', 'Arial', sans-serif;
+            font-size: 20px;
+            color: #ffffff;
+            margin-top: 20px;
+            margin-bottom: 20px;
+         }
+
+         .contact-page #address {
+            text-align: center;
+            font-family: 'Calibri', 'Arial', sans-serif;
+            font-size: 20px;
+            color: #f5f8f5;
+            margin-top: 20px;
+            margin-bottom: 20px;
+         }
+
+         .contact-page #copyright {
+            text-align: center;
+            font-family: 'Calibri', 'Arial', sans-serif;
+            font-size: 20px;
+            color: #ffffff;
+            margin-top: 20px;
+            margin-bottom: 20px;
+         }
+
+         .gallery-page #address {
+            text-align: center;
+            font-family: 'Calibri', 'Arial', sans-serif;
+            font-size: 20px;
+            color: #f5f8f5;
+            margin-top: 20px;
+            margin-bottom: 20px;
+         }  
+
+         .gallery-page #copyright {
+            text-align: center;
+            font-family: 'Calibri', 'Arial', sans-serif;
+            font-size: 20px;
+            color: #ffffff;
+            margin-top: 20px;
+            margin-bottom: 20px;
+         }
+
+         #cta-links {
+            text-decoration: none;
+            color: #ff0202;
+         }
+
+          #cta-links {
+            text-decoration: none;
+            color: #ff0202;
+         }
+        body {
+            font-family: 'Calibri', 'Arial', sans-serif;
+            margin: 0px;
+            padding: 0;
+            width: 100%;
+        }
+        
+
+    header, footer {
+    width: 100%;
+    box-sizing: border-box; 
+        }
+
+
+         header {
+            background-color: #7b828b;
+            color: rgb(255, 255, 255);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            padding: 15px 40px;
+        }
+
+        
+
+         header nav a {
+            color: rgb(255, 253, 253);
+            text-decoration: none;
+            margin-left: 10px;
+            font-family: 'Calibri', 'Arial', sans-serif;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        nav img {
+            width: 50px;
+            height: 50px;
+        }
+
+         .promo-banner {
+      max-width: 1200px;
+      margin: 100px auto 0px;
+      background-color:#0a192f;
+      border: 1px dashed var(--border-card);
+      border-radius: 50px;
+      padding: 24px;
+      text-align: center;
+
+    }
+
+    .promo-banner h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1.4rem;
+      color: var(--acid-green);
+      margin-bottom: 12px;
+      text-align: center;
+    }
+
+    .tiers {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 16px;
+      color: #fdfdfd;
+    }
+
+       
+
+
+        nav a {
+            color: rgb(10, 10, 10);
+            text-decoration: italic;
+            padding: 10px;
+        }
+
+        main {
+            padding: 50px;
+        }
+          h1 {
+            border-bottom: 2px solid black;
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+          }  
+
+          #gallery {
+          
+    background-image: none;
+    padding-left: 25px;
+}
+
+        footer {
+            background-color: #7b828b;
+            color: rgb(255, 255, 255);
+            text-align: center;
+             width: 100%;
+            padding: 20px 0;
+            margin: 0;
+           
+        }
+         footer nav a {
+            color: rgb(8, 8, 8);
+            text-decoration: none;
+            margin-left: 10px;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+        }
+
+
+       /* 1. The Grid Container Wrapper */
+.tiers {
+  display: flex;
+  flex-direction: row;
+  /* Automatically wraps columns to fit screens, keeping them uniform */
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 100%;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: system-ui, -apple-system, sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+}
+  
+
+
+.tier-box {
+  background-color: #efeff3;   /* White background */
+  color: #ffffff;              /* White text */
+  padding: 30px;
+  border-radius: 20px;         /* curved corners */
+  font-size: 1.05rem;
+  line-height: 1.5;
+  color: #0a192f;              /* Navy text color */
+  
+  /* Forces all cards to match the height of the tallest card's text */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 200px; 
+  text-align: center;
+  box-sizing: border-box;
+  flex: 1;
+}
+
+/* 3. Injecting Icons via CSS (Matches your IDs) */
+.tier-box::before {
+  font-size: 2rem;            /* Icon size */
+  margin-bottom: 15px;        /* Spacing below icon */
+  display: block;
+}
+
+#tier1::before { content: "🏢"; } /* House emoji */
+#tier2::before { content: "🛡️"; } /* Shield emoji */
+#tier3::before { content: "📶"; } /* Network emoji */
+#tier4::before { content: "🤝"; } /* Holding hands emoji */
+
+
+  
+  
+  #tier-box {
+    height:auto; /* Allows the box to expand based on content */
+    grid-column: span 2;
+    min-height: 220px; /* Ensures it doesn't shrink too much */ 
+  }
+
+
+/*The Container that arranges the boxes horizontally */
+.rooms-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 24px;
+  max-width: 1200px;
+  margin: 30px auto;
+  width: 70%;
+  box-sizing: border-box;
+}
+
+/* Styling the individual boxes */
+.room-card {
+  background-color: #0a192f;   /* Deep Navy Blue box background */
+  color: #ffffff;              /* Crisp white text color */
+  border: 1px solid rgba(212, 175, 55, 0.3); 
+  border-radius: 16px;         /* curved corners */
+  padding: 24px;
+  flex: 1;                     /* Makes all 3 boxes exactly the same width */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+}
+
+/* Styling the titles inside the boxes */
+.room-card h3 {
+  color: #ffffff;              /* Premium White text for room headers */
+  margin-top: 0;
+  margin-bottom: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 8px;
+  font-size: 1.3rem;
+}
+
+/* Cleaning up the vertical text spacing inside the boxes */
+.room-card p {
+  margin: 8px 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Mobile Phone Responsive Fix: Stacks them vertically on small screens */
+@media (max-width: 900px) {
+  .rooms-container {
+    flex-direction: column;
+  }
+}
+
+
+/* Only triggers the side-by-side room boxes on the Backrooms page */
+.backrooms-page .rooms-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 24px;
+  max-width: 1200px;
+  margin: 30px auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.backrooms-page {
+ background-color: #0a192f !important;
+  color: #ffffff;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.backrooms-page .room-card {
+  background-color: #0a192f;   
+  color: #ffffff;              
+  border: 1px solid rgba(212, 175, 55, 0.3); 
+  border-radius: 16px;         
+  padding: 24px;
+  flex: 1;                     
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+}
+.contact-page {
+ background-color: #0a192f !important;
+  color: #ffffff;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* Only transforms the <main> container into a Navy block card on the Contact page */
+.contact-page main {
+  background-color: #0a192f;           
+  color: #ffffff;                      
+  max-width: 600px;                    
+  margin: 40px auto;                   
+  padding: 40px;
+  border-radius: 20px;                 
+  border: 1px solid rgba(212, 175, 55, 0.2); 
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  height: -1;
+}
+
+.contact-page main input[type="text"],
+.contact-page main input[type="email"],
+.contact-page main input[type="tel"],
+.contact-page main select {
+  width: 100%;                         
+  padding: 12px;
+  background-color: #ffffff;           
+  color: #1a1d20;                      
+  border: 2px solid #cbd5e1;
+  border-radius: 8px;                  
+  margin-bottom: 20px;                 
+  box-sizing: border-box;
+}
+
+/* Sets the main background for the Gallery page */
+.gallery-page {
+  background-color: #0a192f !important;
+  color: #ffffff;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+
+
+
+#gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 24px;                      /* even spaces between images */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px 40px 20px;
+  box-sizing: border-box;
+}
+
+/* 4. Column Wrapper Settings */
+#gallery article {
+  flex: 1;                        
+  display: flex;
+  flex-direction: column;
+  gap: 32px;                      
+}
+
+/* force image into square shapes */
+#gallery img {
+  width: 100%;
+  aspect-ratio: 1 / 1;           
+  object-fit: cover;              
+  border-radius: 6px;             
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+  display: block;
+}
+
+/* aligns the image captions under the images */
+#gallery figcaption {
+  margin-top: 10px;               
+  margin-bottom: 8px;            
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-align: center;            
+  color: #ffffff;                 
+}
+
+
+@media screen and (max-width: 768px) {
+
+  /* --- GLOBAL LAYOUT RESET & SAFETY SHIELD --- */
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    overflow-x: hidden; /* Hard safety gate protecting screens from ugly horizontal side-scrolling */
+    width: 100%;
+  }
+
+  /* --- RESPONSIVE NAVIGATION BAR HEADER --- */
+  header {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 15px;
+    padding: 15px !important;
+  }
+
+  header nav {
+    width: 100%;
+  }
+
+  /* put navigation links in a row */
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px 20px;
+    width: 100%;
+  }
+
+  .nav-links a {
+    font-size: 1rem !important;
+    padding: 6px 0;
+  }
+
+
+
+
+  /* takes the hero section */
+  .hero-section {
+    min-height: auto !important;
+    padding: 40px 16px !important;
+  }
+
+  /* Deletes negative padding or margin track conflicts */
+  #welcome-text {
+    font-size: 2.2rem !important;
+    line-height: 1.2 !important;
+    margin-top: 0 !important;
+    margin-bottom: 20px !important;
+    text-align: center !important;
+  }
+
+  /* Resets properties, eliminating the overlapping -55px gap */
+  h4, .hero-section h2, .hero-section h4 {
+    font-size: 1.1rem !important;
+    line-height: 1.5 !important;
+    margin-top: 0 !important;
+    margin-bottom: 16px !important;
+    text-align: center !important;
+  }
+
+  /* Stabilizes the secondary home headings */
+  .home-page h2 {
+    font-size: 1.6rem !important;
+    text-align: center !important;
+    margin-top: 30px !important;
+    margin-bottom: 20px !important;
+  }
+
+  /* Centers the bullet point lists cleanly on compact displays */
+  #cater-for-list {
+    margin-top: 0 !important;
+    margin-bottom: 30px !important;
+    font-size: 1.1rem !important;
+    padding-left: 20px !important;
+    display: inline-block !important;
+    max-width: 290px;
+  }
+
+
+ 
+
+  /* Fixes top page headers */
+  .about-page h2, 
+  body.about-page > h2 {
+    font-size: 1.8rem !important;
+    margin-top: 30px !important;
+    margin-bottom: 20px !important;
+    text-align: center !important;
+  }
+
+  /* Overrides the massive 25px font and strips the destructive -100px margin from line 100 */
+  .about-page p {
+    font-size: 1.15rem !important; 
+    line-height: 1.6 !important;
+    margin-top: 0 !important;      
+    margin-bottom: 24px !important;
+    padding: 0 16px !important;
+  }
+
+  .about-page ul {
+    font-size: 1.15rem !important; 
+    line-height: 1.6 !important;
+    margin-top: 0 !important;      
+    margin-bottom: 24px !important;
+    padding: 0 16px !important;
+  }
+
+
+ 
+  
+  .rooms-container {
+    display: flex;
+    flex-direction: column !important; /* Converts desktop row into an vertical card scroll  */
+    gap: 24px !important;
+    padding: 0 16px !important;
+  }
+
+  .room-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+
+
+ 
+  
+  .contact-page main {
+    width: 92% !important;
+    max-width: 100% !important;
+    margin: 20px auto !important;
+    padding: 24px 16px !important;
+  }
+
+  /* Expands form interaction touch points for user fingertips */
+  .contact-page main input,
+  .contact-page main select {
+    font-size: 16px !important; 
+    padding: 12px !important;
+  }
+
+
+
+
+  /*Makes a clean view for the gallery*/
+  #gallery {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 24px !important;
+    padding: 0 16px !important;
+  }
+
+  #gallery article {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 24px !important;
+  }
+
+  /* changes the gallery image styling */
+  #gallery img {
+    width: 100% !important;
+    aspect-ratio: 1 / 1 !important;
+    object-fit: cover !important;
+    border-radius: 8px !important;
+  }
+}
+
+/* ==========================================
+   4 CARDS COLOR ANIMATION
+   ========================================== */
+
+
+.tier-box {
+  border: 3px solid #3b82f6; 
+  border-radius: 12px;       
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+  /* Runs the color-shifting loop over 6 seconds smoothly and loops forever */
+  animation: cardColorChange 6s infinite ease-in-out;
+}
+
+/* Make the blocks move when you hover over them */
+.tier-box:hover {
+  transform: translateY(-6px);
+}
+
+/* The colors which shift over time */
+@keyframes cardColorChange {
+  0% {
+    border-color: #ff0000; 
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.25);
+  }
+  25% {
+    border-color: #3dea08; 
+    box-shadow: 0 4px 15px rgba(248, 248, 246, 0.25);
+  }
+  50% {
+    border-color: #0231ff; 
+    box-shadow: 0 4px 15px rgba(16, 185, 129, 0.25);
+  }
+  75% {
+    border-color: #f304cb; 
+    box-shadow: 0 4px 15px rgba(168, 85, 247, 0.25);
+  }
+  100% {
+    border-color: #000000; 
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.25);
+  }
+}
+
