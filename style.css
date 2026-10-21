@@ -764,3 +764,23 @@
   }
 }
 
+/* ==========================================
+   NAVIGATION LINK HOVER ANIMATION
+   ========================================== */
+
+/*smooth navigation */
+.nav-bar a {
+  display: inline-block; /* Required for transform movements to work on text links */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* avoid moving all the links & targets only one link which you hovor over  */
+.nav-bar a:hover {
+  transform: translateY(-4px); 
+  }
+
+/*This applies the upward movement ONLY to the link being hovered over */
+.nav-bar a:hover, nav a:hover, ul li a:hover, header a:hover {
+  transform: translateY(-5px) !important; 
+  color: #0a192f !important; 
+}
