@@ -1,12 +1,12 @@
 document.addEventListener('DOMContentLoaded', function() {
     
     // ==========================================
-    // 1. INTERACTIVE MAP SECTION (Runs ONLY on Contact Page)
+    // 1. INTERACTIVE MAP SECTION 
     // ==========================================
     const mapContainer = document.getElementById('map');
     
     if (mapContainer) {
-        // Map initializes safely only if the container exists
+        
         const map = L.map('map').setView([-26.1611, 28.3283], 15); 
 
         L.tileLayer('https://{s}://{z}/{x}/{y}{r}.png', {
@@ -24,17 +24,17 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // ==========================================
-    // 2. LIGHTBOX GALLERY SECTION (Runs ONLY on Gallery Page)
+    // 2. LIGHTBOX GALLERY SECTION 
     // ==========================================
     const lightbox = document.getElementById('lightbox');
     const lightboxImg = document.getElementById('lightbox-img');
     const closeBtn = document.getElementById('close-lightbox');
     const thumbnails = document.querySelectorAll('.gallery-thumb');
 
-    // Only set up the loops if the gallery lightbox markup is found on the page
+    
     if (lightbox && thumbnails.length > 0) {
         
-        // Loop through and listen for image click actions
+        
         thumbnails.forEach(thumb => {
             thumb.addEventListener('click', () => {
                 lightboxImg.src = thumb.src;
@@ -42,14 +42,14 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
 
-        // Click handler to shut off popup overlay via (X) symbol
+        
         if (closeBtn) {
             closeBtn.addEventListener('click', () => {
                 lightbox.style.display = 'none';
             });
         }
 
-        // Click handler to shut off popup overlay if clicking dark background empty space
+       
         lightbox.addEventListener('click', (e) => {
             if (e.target === lightbox) {
                 lightbox.style.display = 'none';
