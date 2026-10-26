@@ -1,64 +1,84 @@
-        <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Backrooms - www.khumalorentalbackrooms.co.za</title>
+  <meta name="keywords" content="Khumalo Rental Backrooms, Khumalo Residence, rooms for rent, affordable student accommodation, secure backrooms, township rentals, rooms for business travelers, clean rooms to rent">
+    <meta name="description" content="Welcome to Khumalo Rental Backrooms. Find your perfect backroom for rent in Benoni, Gauteng.">
+    <meta name="revisit" content="20 days">
+    
+    <meta name="robots" content="index, follow">
+
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="backrooms-page">
-   <header>
-        
-            <img src="images\logo.svg" width="100" height="100" alt="Khumalo Rental Backrooms Logo">
-            <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="backrooms.html">Backrooms</a>
-            <a href="contact.html">Contact Us</a>
-            <a href="gallery.html">Gallery</a>
-            <hr>
-        </nav>
-    </header>
-   <h2>Our Rental Backrooms</h2>
-    <main>
+  <header>
+    <img src="images/logo.svg" width="100" height="100" alt="Khumalo Rental Backrooms Logo">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="backrooms.html">Backrooms</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="gallery.html">Gallery</a>
+      <hr>
+    </nav>
+  </header>
 
-        
+  <main>
+    <h2>Our Rental Backrooms</h2>
 
-        <div class="rooms-container"></div>
+    <!-- Interactive Filtering Controls Panel -->
+    <div class="filter-controls" style="margin-bottom: 20px; display: flex; gap: 15px; flex-wrap: wrap; background-color: #112233; padding: 15px; border-radius: 6px; align-items: flex-end;">
+      
+      <div>
+        <label style="color: white; display: block; font-size: 14px; margin-bottom: 4px;">Search Bedrooms:</label>
+        <input type="text" id="room-search" placeholder="e.g. 1 Bedroom, 2 Bedrooms, 3 Bedrooms" style="padding: 8px; border-radius: 4px; border: 1px solid #ccc; width: 220px;">
+      </div>
 
-        <div class="room-card">
-        <h3>1 Bedroom room</h3>
-        <p><b>Short-Term:</b> R850 per night</p></p>Current Status: <strong style="color: green;">Available Now</strong></p>
-        <p><b>Long-Term:</b> R4,500 per month</p></p>Current Status: <strong style="color: red;">Not Available</strong></p>
-        <p><b>Includes:</b> King bed, Kitchenette, Free WiFi, DSTV, Parking</p>
-        <img src="images\1 Bedroom room — rental picture.png" width="300" height="200" alt="1 Bedroom room"></div>
-        </div>
+      <div>
+        <label style="color: white; display: block; font-size: 14px; margin-bottom: 4px;">Availability Status:</label>
+        <select id="status-filter" style="padding: 8px; border-radius: 4px; border: 1px solid #ccc;">
+          <option value="all">Show All Rooms</option>
+          <option value="available">Available Now Only</option>
+        </select>
+      </div>
 
-        <div class="room-card">
-        <h3>2 Bedroom room</h3>
-        <p><b>Short-Term:</b> R1,200 per night</p></p>Current Status: <strong style="color: red;">Not Available</strong></p>
-        <p><b>Long-Term:</b> R6,500 per month</p></p>Current Status: <strong style="color: green;">Available Now</strong></p>
-        <p><b>Includes:</b> 2 Bedrooms, Full Kitchen, Free WiFi, DSTV, Parking</p>
-        <img src="images\2 Bedroom room — rental picture.png" width="300" height="200" alt="2 Bedroom room"></div>
-        </div>
+      <div>
+        <label style="color: white; display: block; font-size: 14px; margin-bottom: 4px;">Sort By Price:</label>
+        <select id="price-sort" style="padding: 8px; border-radius: 4px; border: 1px solid #ccc;">
+          
+          <option value="low-high">Low to High</option>
+          <option value="high-low">High to Low</option>
+        </select>
+      </div>
 
-        <div class="room-card">
-        <h3>3 Bedroom Family room</h3>
-        <p><b>Short-Term:</b> R1,800 per night</p></p>Current Status: <strong style="color: green;">Available Now</strong></p>
-        <p><b>Long-Term:</b> R8,500 per month</p></p>Current Status: <strong style="color: green;">Available Now</strong></p>
-        <p><b>Includes:</b> 3 Bedrooms, Full Kitchen, Free WiFi, DSTV, Parking, Laundry</p>
-        <img src="images\3 Bedroom Family room — rental picture.png" width="300" height="200" alt="3 Bedroom Family room"></div>
-        </div>
+      <div>
+        <!-- search button -->
+        <button type="button" id="search-btn" style="color: white; background-color: #0f1d3a; padding: 10px 20px; border-radius: 4px; text-decoration: none; border: 1px solid #334455;">Search</button>
+      </div>
 
-        <br id="cta-links">
-        <a href="contact.html">Rent Now / Request a Quote</a>
-    </main>
+    </div>
 
-     <footer>
+    
+    <div id="rooms-display-container" class="rooms-container" style="display: flex; flex-direction: column; gap: 20px;">
+    </div>
+
+    <div style="margin-top: 40px; margin-bottom: 20px;">
+        <a href="contact.html" style="color: white; background-color: #0f1d3a; padding: 10px 20px; border-radius: 4px; text-decoration: none; border: 1px solid #334455;">Rent Now / Request a Quote</a>
+    </div>
+  </main>
+
+  <footer>
     <hr>
     <p id="address">115 Main Road Rynfield, Benoni, Gauteng, South Africa.</p>
-        <p id="copyright"> &copy; 2026 Khumalo Rental Backrooms.</p>
-        <img src="images\logo.svg" width="100" height="100" alt="Khumalo Rental Backrooms Logo">
+    <p id="copyright"> &copy; 2026 Khumalo Rental Backrooms.</p>
+    <img src="images/logo.svg" width="100" height="100" alt="Khumalo Rental Backrooms Logo">
   </footer>
+
+  <!-- JAVASCRIPT LINK -->
+  <script src="js/script.js"></script>
 </body>
 </html>
+
+
