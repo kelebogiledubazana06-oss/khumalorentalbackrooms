@@ -3,7 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <title>Contact Us - Khumalo Rental Backrooms</title>
+
+  <!-- added meta tags for SEO and description -->
+   <meta name="keywords" content="Khumalo Rental Backrooms, Khumalo Residence, rooms for rent, affordable student accommodation, secure backrooms, township rentals, rooms for business travelers, clean rooms to rent">
+    <meta name="description" content="Welcome to Khumalo Rental Backrooms. Find your perfect backroom for rent in Benoni, Gauteng.">
+    <meta name="revisit" content="20 days">
+    <meta name="robots" content="index, follow">
+
   <link rel="stylesheet" href="css/style.css">
+  <!-- added Leaflet CSS and JS for map functionality -->
      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
@@ -25,9 +33,26 @@
   <main>
     
     <p>Call us: 014 371 0909 | Email: info@khumalorentalbackrooms.co.za</p>
-    <p>Address: 115 Main Road Rynfield, Benoni, Gauteng</p>
+     
+        
+        <!-- External Social media Links -->
+         <p id="cta-links">
+         <div style="margin-top: 40px; margin-bottom: 20px;">
+        <a href="https://www.facebook.com/me/" target="_blank" rel="noopener" style="color: white; background-color: #0f1d3a; padding: 10px 20px; border-radius: 4px; text-decoration: none; border: 1px solid #334455;">Facebook</a> | 
+        <a href="https://wa.me" target="_blank" rel="noopener" style="color: white; background-color: #0f1d3a; padding: 10px 20px; border-radius: 4px; text-decoration: none; border: 1px solid #334455;">Chat on WhatsApp</a>
+        </div>
+        </p>
+  
+      
+    <p>Find us at: 115 Main Road Rynfield, Benoni, Gauteng</p>
+    <p>We are available for enquiries and bookings from 8:00 AM to 6:00 PM, Monday to Saturday. Please reach out to us during these hours for assistance.</p>
+    
+    <!-- added a map container to display the location of Khumalo Rental Backrooms -->
     <div id="map" style="height: 400px; width: 100%; border-radius: 8px; margin-top: 20px; border: 1px solid #ccc;"></div>
+
+    
     <h3>Send an Enquiry</h3>
+    <!-- added a contact form for users to send enquiries about backroom rentals -->
     <form action="#" method="post">
       <label>Name:</label><br>
       <input type="text" name="name" required><br><br>
@@ -45,6 +70,7 @@
       </select><br><br>
 
 
+      <!-- added a dropdown for users to select the type of apartment they are interested in -->
       <label>Apartment Type:</label><br>
       <select name="apartment">
         <option>1 Bedroom</option>
@@ -52,13 +78,15 @@
         <option>3 Bedroom</option>
       </select><br><br>
 
+      <!-- added a date input for users to select their desired check-in date -->
       <label>Check-in Date:</label><br>
       <input type="date" name="checkin"><br><br>
 
+      <!-- added a textarea for users to provide additional details or questions in their enquiry -->
       <label>Message:</label><br>
       <textarea name="message" rows="4" cols="40"></textarea><br><br>
-
-      <input type="submit" value="Send Enquiry">
+<div style="margin-top: 20px; margin-bottom: 20px;">
+      <input type="submit" value="Send Enquiry" style="background-color: #0f1d3a; color: white; padding: 10px 20px; border-radius: 4px; border: 1px solid #334455; cursor: pointer;">
     </form>
   </main>
 
@@ -69,6 +97,8 @@
         <p id="copyright"> &copy; 2026 Khumalo Rental Backrooms.</p>
         <img src="images\logo.svg" width="100" height="100" alt="Khumalo Rental Backrooms Logo">
   </footer>
+
+  <!-- JAVASCRIPT LINK -->
   <script src="js\script.js"></script>
 </body>
 </html>

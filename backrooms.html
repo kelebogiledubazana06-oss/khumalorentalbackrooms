@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <title>Backrooms - www.khumalorentalbackrooms.co.za</title>
+
+  <!-- added meta tags for SEO and description -->
   <meta name="keywords" content="Khumalo Rental Backrooms, Khumalo Residence, rooms for rent, affordable student accommodation, secure backrooms, township rentals, rooms for business travelers, clean rooms to rent">
     <meta name="description" content="Welcome to Khumalo Rental Backrooms. Find your perfect backroom for rent in Benoni, Gauteng.">
     <meta name="revisit" content="20 days">
-    
     <meta name="robots" content="index, follow">
 
   <link rel="stylesheet" href="css/style.css">
@@ -31,11 +32,13 @@
     <!-- Interactive Filtering Controls Panel -->
     <div class="filter-controls" style="margin-bottom: 20px; display: flex; gap: 15px; flex-wrap: wrap; background-color: #112233; padding: 15px; border-radius: 6px; align-items: flex-end;">
       
+      <!-- added search input for filtering rooms by name or type -->
       <div>
         <label style="color: white; display: block; font-size: 14px; margin-bottom: 4px;">Search Bedrooms:</label>
         <input type="text" id="room-search" placeholder="e.g. 1 Bedroom, 2 Bedrooms, 3 Bedrooms" style="padding: 8px; border-radius: 4px; border: 1px solid #ccc; width: 220px;">
       </div>
 
+      <!-- added dropdown for filtering rooms by availability status -->
       <div>
         <label style="color: white; display: block; font-size: 14px; margin-bottom: 4px;">Availability Status:</label>
         <select id="status-filter" style="padding: 8px; border-radius: 4px; border: 1px solid #ccc;">
@@ -44,6 +47,7 @@
         </select>
       </div>
 
+      <!-- added dropdown for sorting rooms by price -->
       <div>
         <label style="color: white; display: block; font-size: 14px; margin-bottom: 4px;">Sort By Price:</label>
         <select id="price-sort" style="padding: 8px; border-radius: 4px; border: 1px solid #ccc;">
@@ -53,6 +57,7 @@
         </select>
       </div>
 
+      <!-- added dropdown for filtering rooms by number of bedrooms -->
       <div>
         <!-- search button -->
         <button type="button" id="search-btn" style="color: white; background-color: #0f1d3a; padding: 10px 20px; border-radius: 4px; text-decoration: none; border: 1px solid #334455;">Search</button>
@@ -60,10 +65,11 @@
 
     </div>
 
-    
+    <!-- added a container to dynamically display the filtered and sorted rooms -->
     <div id="rooms-display-container" class="rooms-container" style="display: flex; flex-direction: column; gap: 20px;">
     </div>
 
+    <!-- added a message to display when no rooms match the search criteria -->
     <div style="margin-top: 40px; margin-bottom: 20px;">
         <a href="contact.html" style="color: white; background-color: #0f1d3a; padding: 10px 20px; border-radius: 4px; text-decoration: none; border: 1px solid #334455;">Rent Now / Request a Quote</a>
     </div>

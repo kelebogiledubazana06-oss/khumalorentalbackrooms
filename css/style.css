@@ -52,6 +52,10 @@
        
     }
 
+    #about-heading {
+    border-bottom: 1px solid #ffffff; /* This changes the line to solid white */
+}
+
      #about-heading {
         margin-top: 20px;
         margin-bottom: 50px;
@@ -719,5 +723,112 @@
     object-fit: cover !important;
     border-radius: 8px !important;
   }
+}
+
+/* ==========================================
+   4 CARDS COLOR ANIMATION
+   ========================================== */
+
+
+.tier-box {
+  border: 3px solid #3b82f6; 
+  border-radius: 12px;       
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+  /* Runs the color-shifting loop over 6 seconds smoothly and loops forever */
+  animation: cardColorChange 6s infinite ease-in-out;
+}
+
+/* Make the blocks move when you hover over them */
+.tier-box:hover {
+  transform: translateY(-6px);
+}
+
+/* The colors which shift over time */
+@keyframes cardColorChange {
+  0% {
+    border-color: #ff0000; 
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.25);
+  }
+  25% {
+    border-color: #3dea08; 
+    box-shadow: 0 4px 15px rgba(248, 248, 246, 0.25);
+  }
+  50% {
+    border-color: #0231ff; 
+    box-shadow: 0 4px 15px rgba(16, 185, 129, 0.25);
+  }
+  75% {
+    border-color: #f304cb; 
+    box-shadow: 0 4px 15px rgba(168, 85, 247, 0.25);
+  }
+  100% {
+    border-color: #000000; 
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.25);
+  }
+}
+
+/* ==========================================
+   NAVIGATION LINK HOVER ANIMATION
+   ========================================== */
+
+/*smooth navigation */
+.nav-bar a {
+  display: inline-block; /* Required for transform movements to work on text links */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* avoid moving all the links & targets only one link which you hovor over  */
+.nav-bar a:hover {
+  transform: translateY(-4px); 
+  }
+
+/*This applies the upward movement ONLY to the link being hovered over */
+.nav-bar a:hover, nav a:hover, ul li a:hover, header a:hover {
+  transform: translateY(-5px) !important; 
+  color: #0a192f !important; 
+}
+
+/* Mobile Responsiveness for Search Filters */
+@media screen and (max-width: 600px) {
+    /* Targets the container holding your search inputs */
+    .filter-container, 
+    div[style*="background-color: #112233"],
+    form { 
+        padding: 15px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 15px !important;
+    }
+
+    
+    /* Mobile viewport adjustments */
+    #room-search,
+    #status-filter,
+    #price-sort,
+    .filter-container input,
+    .filter-container select {
+        width: 500% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    
+    .filter-container label {
+        display: block !important;
+        margin-bottom: 5px !important;
+        width: 100% !important;
+    }
+
+    
+    #search-btn, 
+    .filter-container button,
+    input[type="submit"] {
+        width: 100% !important;
+        padding: 12px !important;
+        font-size: 16px !important;
+    }
+
+    
 }
 
