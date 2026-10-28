@@ -53,41 +53,130 @@
     
     <h3>Send an Enquiry</h3>
     <!-- added a contact form for users to send enquiries about backroom rentals -->
-    <form action="#" method="post">
-      <label>Name:</label><br>
-      <input type="text" name="name" required><br><br>
+    <!-- Fully Compliant HTML Form -->
+<!-- Update your form tag to look exactly like this -->
+ <!-- Form Element with Action Identifier -->
+   <!-- Add novalidate right here inside the form tag -->
+<form id="enquiryForm" action="#" method="post" novalidate>
 
-      <label>Email:</label><br>
-      <input type="email" name="email" required><br><br>
+        
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <div class="error-msg" id="nameError">Please enter your name.</div>
 
-      <label>Phone:</label><br>
-      <input type="tel" name="phone"><br><br>
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name" required>
+        <div class="error-msg" id="lastNameError">Please enter your last name.</div>
 
-      <label>Period of Stay:</label><br>
-      <select name="stay_period">
-      <option> Short-Term</option>
-      <option> Long-Term</option>
-      </select><br><br>
-
-
-      <!-- added a dropdown for users to select the type of apartment they are interested in -->
-      <label>Apartment Type:</label><br>
-      <select name="apartment">
-        <option>1 Bedroom</option>
-        <option>2 Bedroom</option>
-        <option>3 Bedroom</option>
-      </select><br><br>
-
-      <!-- added a date input for users to select their desired check-in date -->
-      <label>Check-in Date:</label><br>
-      <input type="date" name="checkin"><br><br>
-
-      <!-- added a textarea for users to provide additional details or questions in their enquiry -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="e.g. abcdef@example.com" required>
+        <div class="error-msg" id="emailError">Please enter a valid email address.</div>
+        
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" placeholder="e.g. 0821234567" required>
+        <div class="error-msg" id="phoneError">Please enter a valid 10-digit phone number.</div>
+        
+        <label for="stay_period">Period of Stay:</label>
+        <select id="stay_period" name="stay_period"> 
+            <option value="Short-Term">Short-Term</option> 
+            <option value="Long-Term">Long-Term</option> 
+        </select>
+        
+        <label for="apartment">Apartment Type:</label>
+        <select id="apartment" name="apartment"> 
+            <option value="1 Bedroom">1 Bedroom</option> 
+            <option value="2 Bedroom">2 Bedroom</option> 
+            <option value="3 Bedroom">3 Bedroom</option> 
+        </select>
+        
+        <label for="checkin">Check-in Date:</label>
+        <input type="date" id="checkin" name="checkin" required>
+        <div class="error-msg" id="dateError">Please select a check-in date.</div>
+        
+        <h2></h2>
+        <!-- added a textarea for users to provide additional details or questions in their enquiry -->
       <label>Message:</label><br>
       <textarea name="message" rows="4" cols="40"></textarea><br><br>
-<div style="margin-top: 20px; margin-bottom: 20px;">
-      <input type="submit" value="Send Enquiry" style="background-color: #0f1d3a; color: white; padding: 10px 20px; border-radius: 4px; border: 1px solid #334455; cursor: pointer;">
+        
+        <!-- Fixed layout container with closed div tag -->
+        <div style="margin-top: 25px; text-align: center;"> 
+            <input type="submit" value="Send Enquiry" style="background-color: #0f1d3a; color: white; padding: 12px 30px; border-radius: 4px; border: 1px solid #334455; cursor: pointer; font-size: 15px;"> 
+        </div>
+        
+        <!-- Form submission status feedback container -->
+        <div id="formStatus"></div>
     </form>
+
+    <!-- A JavaScript block inside html for handling form submission -->
+    <script>
+    document.getElementById('enquiryForm').addEventListener('submit', function(event) {
+        // Prevent default browser form submission page reload
+        event.preventDefault(); 
+        
+        // Reset and clear any existing error alerts
+        let isValid = true;
+        const errors = document.querySelectorAll('.error-msg');
+        errors.forEach(msg => msg.style.display = 'none');
+        
+        const statusDiv = document.getElementById('formStatus');
+        statusDiv.textContent = '';
+
+        // Capture input element field values
+        const name = document.getElementById('name').value.trim();
+        const lastName = document.getElementById('last_name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const phone = document.getElementById('phone').value.trim();
+        const checkin = document.getElementById('checkin').value;
+
+        // 1. Validate Name Field
+        if (name === '') {
+            document.getElementById('nameError').style.display = 'block';
+            isValid = false;
+        }
+
+        // 2. Validate Last Name Field
+        if (lastName === '') {
+            document.getElementById('lastNameError').style.display = 'block';
+            isValid = false;
+        }
+
+        // 3. Validate Email format 
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            document.getElementById('emailError').style.display = 'block';
+            isValid = false;
+        }
+
+        // 4. Validate Phone field pattern rules (10 digits if provided)
+        const phoneRegex = /^[0-9]{10}$/;
+        if (phone !== '' && !phoneRegex.test(phone)) {
+            document.getElementById('phoneError').style.display = 'block';
+            isValid = false;
+        }
+
+        // 5. Validate Check-in Date Choice
+        if (checkin === '') {
+            document.getElementById('dateError').style.display = 'block';
+            isValid = false;
+        }
+
+        // 6. added asynchronous operation to simulate sending the enquiry and provide user feedback
+        if (isValid) {
+            statusDiv.style.color = '#ffaa00'; 
+            statusDiv.textContent = 'Sending enquiry...';
+
+            // Simulated a delay for sending the enquiry 
+            setTimeout(() => {
+                statusDiv.style.color = '#00ff66'; // Success Green text
+                statusDiv.textContent = 'Enquiry sent successfully!';
+                
+                // Clear the form fields upon successful operational loop completion
+                document.getElementById('enquiryForm').reset(); 
+            }, 1000);
+        }
+    });
+    </script>
+
   </main>
 
 
@@ -107,4 +196,8 @@
   HIDDEN REFERENCE LIST:
   W3Schools, n.d. HTML <select> Tag. [online] 
   Available at: <https://www.w3schools.com/tags/tag_select.asp> [Accessed 14 August 2026].
+  W3Schools, n.d. HTML Forms. [online] 
+  Available at: <https://www.w3schools.com/html/tryit.asp?filename=tryhtml_form_submit> [Accessed 28 October 2026].
+  W3Schools, n.d. JavaScript Form Validation. [online]
+  Available at: <https://www.w3schools.com/js/js_validation.asp> [Accessed 28 October 2026].
 -->
