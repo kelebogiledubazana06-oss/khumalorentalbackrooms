@@ -14,7 +14,18 @@
   <!-- added Leaflet CSS and JS for map functionality -->
      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-
+ <style>
+      .error-msg {
+        display: none !important;
+      }
+      .was-validated .show-error {
+        display: block !important;
+        color: #ff4d4d;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        font-size: 14px;
+      }
+    </style>
 </head>
 <body class="contact-page">
   <header>
@@ -51,131 +62,123 @@
     <div id="map" style="height: 400px; width: 100%; border-radius: 8px; margin-top: 20px; border: 1px solid #ccc;"></div>
 
     
-    <h3>Send an Enquiry</h3>
-    <!-- added a contact form for users to send enquiries about backroom rentals -->
-    <!-- Fully Compliant HTML Form -->
-<!-- Update your form tag to look exactly like this -->
- <!-- Form Element with Action Identifier -->
-   <!-- Add novalidate right here inside the form tag -->
-<form id="enquiryForm" action="#" method="post" novalidate>
-
+     <h3>Send an Enquiry</h3>
         
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        <div class="error-msg" id="nameError">Please enter your name.</div>
+        <!-- Contact Form -->
+        <form id="enquiryForm" action="#" method="post" novalidate>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <div class="error-msg" id="nameError">Please enter your name.</div>
 
-        <label for="last_name">Last Name:</label>
-        <input type="text" id="last_name" name="last_name" required>
-        <div class="error-msg" id="lastNameError">Please enter your last name.</div>
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name" required>
+            <div class="error-msg" id="lastNameError">Please enter your last name.</div>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="e.g. abcdef@example.com" required>
-        <div class="error-msg" id="emailError">Please enter a valid email address.</div>
-        
-        <label for="phone">Phone:</label>
-        <input type="tel" id="phone" name="phone" placeholder="e.g. 0821234567" required>
-        <div class="error-msg" id="phoneError">Please enter a valid 10-digit phone number.</div>
-        
-        <label for="stay_period">Period of Stay:</label>
-        <select id="stay_period" name="stay_period"> 
-            <option value="Short-Term">Short-Term</option> 
-            <option value="Long-Term">Long-Term</option> 
-        </select>
-        
-        <label for="apartment">Apartment Type:</label>
-        <select id="apartment" name="apartment"> 
-            <option value="1 Bedroom">1 Bedroom</option> 
-            <option value="2 Bedroom">2 Bedroom</option> 
-            <option value="3 Bedroom">3 Bedroom</option> 
-        </select>
-        
-        <label for="checkin">Check-in Date:</label>
-        <input type="date" id="checkin" name="checkin" required>
-        <div class="error-msg" id="dateError">Please select a check-in date.</div>
-        
-        <h2></h2>
-        <!-- added a textarea for users to provide additional details or questions in their enquiry -->
-      <label>Message:</label><br>
-      <textarea name="message" rows="4" cols="40"></textarea><br><br>
-        
-        <!-- Fixed layout container with closed div tag -->
-        <div style="margin-top: 25px; text-align: center;"> 
-            <input type="submit" value="Send Enquiry" style="background-color: #0f1d3a; color: white; padding: 12px 30px; border-radius: 4px; border: 1px solid #334455; cursor: pointer; font-size: 15px;"> 
-        </div>
-        
-        <!-- Form submission status feedback container -->
-        <div id="formStatus"></div>
-    </form>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="e.g. abcdef@example.com" required>
+            <div class="error-msg" id="emailError">Please enter a valid email address.</div>
+            
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" placeholder="e.g. 0821234567" required>
+            <div class="error-msg" id="phoneError">Please enter a valid 10-digit phone number.</div>
+            
+            <label for="stay_period">Period of Stay:</label>
+            <select id="stay_period" name="stay_period"> 
+                <option value="Short-Term">Short-Term</option> 
+                <option value="Long-Term">Long-Term</option> 
+            </select>
+            
+            <label for="apartment">Apartment Type:</label>
+            <select id="apartment" name="apartment"> 
+                <option value="1 Bedroom">1 Bedroom</option> 
+                <option value="2 Bedroom">2 Bedroom</option> 
+                <option value="3 Bedroom">3 Bedroom</option> 
+            </select>
+            
+            <label for="checkin">Check-in Date:</label>
+            <input type="date" id="checkin" name="checkin" required>
+            <div class="error-msg" id="dateError">Please select a check-in date.</div>
+            
+            <br>
+            <label>Message:</label><br>
+            <textarea name="message" rows="4" cols="40"></textarea><br><br>
+            
+            <div style="margin-top: 25px; text-align: center;"> 
+                <input type="submit" value="Send Enquiry" style="background-color: #0f1d3a; color: white; padding: 12px 30px; border-radius: 4px; border: 1px solid #334455; cursor: pointer; font-size: 15px;"> 
+            </div>
+            
+            <div id="formStatus" style="margin-top: 15px; text-align: center; font-weight: bold;"></div>
+        </form>
 
-    <!-- A JavaScript block inside html for handling form submission -->
-    <script>
-    document.getElementById('enquiryForm').addEventListener('submit', function(event) {
-        // Prevent default browser form submission page reload
-        event.preventDefault(); 
-        
-        // Reset and clear any existing error alerts
-        let isValid = true;
-        const errors = document.querySelectorAll('.error-msg');
-        errors.forEach(msg => msg.style.display = 'none');
-        
-        const statusDiv = document.getElementById('formStatus');
-        statusDiv.textContent = '';
+        <!-- JavaScript block for Validation -->
+        <script>
+        document.getElementById('enquiryForm').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+            
+            let isValid = true;
+            const form = document.getElementById('enquiryForm');
+            
+            // Tell CSS we are trying to validate now
+            form.classList.add('was-validated');
+           
+            // Clear previous status message
+            const statusDiv = document.getElementById('formStatus');
+            statusDiv.textContent = '';
 
-        // Capture input element field values
-        const name = document.getElementById('name').value.trim();
-        const lastName = document.getElementById('last_name').value.trim();
-        const email = document.getElementById('email').value.trim();
-        const phone = document.getElementById('phone').value.trim();
-        const checkin = document.getElementById('checkin').value;
+            // Get form values
+            const name = document.getElementById('name').value.trim();
+            const lastName = document.getElementById('last_name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            const checkin = document.getElementById('checkin').value;
 
-        // 1. Validate Name Field
-        if (name === '') {
-            document.getElementById('nameError').style.display = 'block';
-            isValid = false;
-        }
+            // Validate name
+            if (name === '') {
+                document.getElementById('nameError').classList.add('show-error');
+                isValid = false;
+            }
 
-        // 2. Validate Last Name Field
-        if (lastName === '') {
-            document.getElementById('lastNameError').style.display = 'block';
-            isValid = false;
-        }
+            // Validate last name
+            if (lastName === '') {
+                document.getElementById('lastNameError').classList.add('show-error');
+                isValid = false;
+            }
 
-        // 3. Validate Email format 
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailRegex.test(email)) {
-            document.getElementById('emailError').style.display = 'block';
-            isValid = false;
-        }
+            // Validate email format using regex
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                document.getElementById('emailError').classList.add('show-error');
+                isValid = false;
+            }
 
-        // 4. Validate Phone field pattern rules (10 digits if provided)
-        const phoneRegex = /^[0-9]{10}$/;
-        if (phone !== '' && !phoneRegex.test(phone)) {
-            document.getElementById('phoneError').style.display = 'block';
-            isValid = false;
-        }
+           // Validate phone number to be exactly 10 digits
+            const phoneRegex = /^[0-9]{10}$/;
+            if (phone === '' || !phoneRegex.test(phone)) {
+                document.getElementById('phoneError').classList.add('show-error');
+                isValid = false;
+            }
 
-        // 5. Validate Check-in Date Choice
-        if (checkin === '') {
-            document.getElementById('dateError').style.display = 'block';
-            isValid = false;
-        }
 
-        // 6. added asynchronous operation to simulate sending the enquiry and provide user feedback
-        if (isValid) {
-            statusDiv.style.color = '#ffaa00'; 
-            statusDiv.textContent = 'Sending enquiry...';
+            // Validate check-in date
+            if (checkin === '') {
+                document.getElementById('dateError').classList.add('show-error');
+                isValid = false;
+            }
 
-            // Simulated a delay for sending the enquiry 
-            setTimeout(() => {
-                statusDiv.style.color = '#00ff66'; // Success Green text
-                statusDiv.textContent = 'Enquiry sent successfully!';
-                
-                // Clear the form fields upon successful operational loop completion
-                document.getElementById('enquiryForm').reset(); 
-            }, 1000);
-        }
-    });
-    </script>
+            // If all validations pass, simulate sending the enquiry
+            if (isValid) {
+                statusDiv.style.color = '#ffaa00'; 
+                statusDiv.textContent = 'Sending enquiry...';
+
+                setTimeout(() => {
+                    statusDiv.style.color = '#00ff66'; 
+                    statusDiv.textContent = 'Enquiry sent successfully!';
+                    form.reset(); 
+                    form.classList.remove('was-validated'); // Hide all errors again
+                }, 1000);
+            }
+        });
+        </script>
 
   </main>
 
@@ -189,6 +192,7 @@
 
   <!-- JAVASCRIPT LINK -->
   <script src="js\script.js"></script>
+
 </body>
 </html>
 
