@@ -73,7 +73,7 @@ A responsive website for advertising and communicating with customers.
 - **Robust JavaScript Logic:** Deployed the core Part 3 JavaScript architecture to handle interactive component state management dynamically.
 - Added a dedicated 'Last Name' input field structure to cleanly separate user identity data.
 - Implemented `<div class="error-msg">` placeholder elements for all critical input fields to display clear visual validation alerts.
-
+- Added the style to all the buttons and links
 #### Changed
 - **Typography Refresh:** Systematically edited and updated global font types across all style layers to establish a more premium and cohesive visual identity.
 - Refactored the main `<form>` tag block to include `novalidate` and `id="enquiryForm"` to gracefully override native browser popup bubbles.
