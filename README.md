@@ -5,7 +5,7 @@ A responsive website for advertising and communicating with customers.
 - **Customer Communication**: Includes contact forms/links to make inquiries straightforward for users.
 
 ## Built With
-- HTML, CSS
+- HTML, CSS, JS
 
 - # How to View the Project Locally
 1. Clone this repository:
@@ -65,6 +65,28 @@ A responsive website for advertising and communicating with customers.
 #### Changed
 - **Budget Section:** Refined and tabulated the project budget data into a clean, professional Markdown table format with centered currency alignments.
 - **Timeline and Milestones:** Re-structured the 3-week project milestone schedule into a neat, scannable table overview.
+## Part 3 Changelog
+#### Added
+- **Interactive Map:** Integrated a functional map element to dynamically show the physical location of the Khumalo Residence.
+- **Advanced Filtering:** Implemented a JavaScript-powered client-side filtering system on the Backroom page to sort and display backrooms smoothly.
+- **UI Animations:** Added sleek hover and active animations to the global navigation links and interactive display cards on the Home page.
+- **Robust JavaScript Logic:** Deployed the core Part 3 JavaScript architecture to handle interactive component state management dynamically.
+- Added a dedicated 'Last Name' input field structure to cleanly separate user identity data.
+- Implemented `<div class="error-msg">` placeholder elements for all critical input fields to display clear visual validation alerts.
+
+#### Changed
+- **Typography Refresh:** Systematically edited and updated global font types across all style layers to establish a more premium and cohesive visual identity.
+- Refactored the main `<form>` tag block to include `novalidate` and `id="enquiryForm"` to gracefully override native browser popup bubbles.
+- Redesigned the **Message** `<textarea>` field with full-width properties (`width: 100%` and `box-sizing: border-box`) to line up precisely with the right-hand borders of other inputs.
+#### Fixed
+- Fixed an unclosed `<div>` element layout wrapper that was breaking the structural alignment of the submit action area.
+- Fixed a validation collision block by routing submission behaviors asynchronously through JavaScript event control.
+## Part 3 References
+- Available at: <https://www.w3schools.com/html/tryit.asp?filename=tryhtml_form_submit> [Accessed 28 October 2026].
+- W3Schools, n.d. JavaScript Form Validation. [online] Available at: <https://www.w3schools.com/js/js_validation.asp> [Accessed 28 October 2026].
+- W3Schools, n.d. JavaScript Maps. [online] Available at: <https://www.w3schools.com/js/js_maps.asp> [Accessed 28 October 2026].
+https://www.w3schools.com/js/js_maps.asp
+- - W3Schools, n.d. How TO Create - Filter/Search List. [online] Available at: <https://www.w3schools.com/howto/howto_js_filter_lists.asp> [Accessed 28 October 2026].
 
 
 
