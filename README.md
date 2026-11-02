@@ -87,6 +87,14 @@ A responsive website for advertising and communicating with customers.
 - W3Schools, n.d. JavaScript Maps. [online] Available at: <https://www.w3schools.com/js/js_maps.asp> [Accessed 28 October 2026].
 https://www.w3schools.com/js/js_maps.asp
 - - W3Schools, n.d. How TO Create - Filter/Search List. [online] Available at: <https://www.w3schools.com/howto/howto_js_filter_lists.asp> [Accessed 28 October 2026].
+    ### All available at: https://www.figma.com/design/RnDWOhzgZ4hbEeatatJL49/Untitled?node-id=0-1&t=GT72089bjmmuW9g5-1
+- Figma (2026) 1 Bedroom - Rental Picture. [AI-generated image]. Created using Figma AI, October 2026.
+
+- Figma (2026) 2 Bedroom - Rental Picture. [AI-generated image]. Created using Figma AI, October 2026.
+
+- Figma (2026) 3 Bedroom - Rental Picture. [AI-generated image]. Created using Figma AI, October 2026.
+  
+- [Kelebogile Dubazana], [K]. (2026). Khumalo Residence Logo 1 [Logotype design]. Unpublished graphic asset.
 
 
 
